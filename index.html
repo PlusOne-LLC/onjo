@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilos/bootstrap-icons.css">
+  <link rel="stylesheet" href="estilos/header.css">
+  <link rel="stylesheet" href="estilos/index.css">
+  <title>Onjo - Inicio</title>
 </head>
-
 <body>
-    
-    <h1>oi, onjo</h1>
-    
-</body>
+  
+  <a href="#top" id="btnSubir"><i class="bi bi-arrow-up-circle"></i></a>
+<header>
+    <nav>
+        <a id="btnLogin" href="./paginas/entrar.html">Entrar</a>
+        <div id="logo">
+            <a href="./index.html">
+                <img src="imagens/diversas/onjo-logo2.png" alt="" />
+            </a>
+        </div>
+        
+        <ul id="lista">
+            <li><a href="">Início</a></li>
+            <li><a href="">Terrenos</a></li>
+            <li><a href="">Sobre Nós</a></li>
+        </ul>
+        
+        <button id="btnMenu">
+            <span class="linha"></span>
+            <span class="linha esconder"></span>
+            <span class="linha"></span>
+        </button>
+    </nav>
+</header>
 
+<main>
+    <section id="top">
+        <div class="texto">
+            <h1>Encontre o terreno perfeito em Angola</h1>
+            <p>A <strong>ONJO</strong> conecta você aos melhores terrenos em todas as províncias de Angola com segurança e transparência</p>
+            <div class="botoes">
+                <a class="bt1" href="#">Explorar terrenos <i class="bi-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="imagem">
+            <img src="imagens/fundos/10.webp" alt="" />  
+        </div>
+        <div class="filtros">
+            <div class="listaSelect">
+                <div class="filtro">
+                    <label for="provincia">Provincia</label>
+                    <select name="provincia" id="provincia">
+                        <option value="todas">Todas</option>
+                        <option value="">Huíla</option>
+                    </select>
+                </div>
+                <div class="filtro">
+                    <label for="tipo">Tipo de Terreno</label>
+                    <select name="tipo" id="tipo">
+                        <option value="todas">Todos</option>
+                        <option value="">Residencial</option>
+                        <option value="">Comercial</option>
+                        <option value="">Industrial</option>
+                        <option value="">Rural</option>
+                    </select>
+                </div>
+                <div class="filtro">
+                    <label for="estadoLegal">Estado legal</label>
+                    <select name="estadoLegal" id="estadoLegal">
+                        <option value="todas">Todos</option>
+                        <option value="">Legalizado</option>
+                        <option value="">Em regularização</option>
+                        <option value="">Não legalizados</option>
+                    </select>
+                </div>
+            </div>
+            <div class="botoes">
+               <button id="btnPesquisa">Pesquisar</button> 
+            </div>
+        </div>
+    </section>          
+</main>
+
+  <script src="scripts/header.js"></script>
+</body>
 </html>

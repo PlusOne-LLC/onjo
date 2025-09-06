@@ -1,0 +1,305 @@
+/* ========== Reset e Raiz ==========*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: "font1";
+    src: url("../fonts/built titling bd.ttf") format("truetype");
+}
+
+:root {
+    --cor1: #E02130;
+    --cor2: #FAB243;
+    --cor3: #429867;
+    --cor4: #2b5166;
+    --cor5: #482344;
+    
+    --font1: font1;
+}
+
+a#btnSubir {
+    background-color: var(--cor3);
+    position: fixed;
+    bottom: -100%;
+    right: 1.5%;
+    z-index: 400;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    padding: 0px 0 2px 0;
+}
+a#btnSubir.aparece {
+    bottom: 2%;
+    animation: crescer 0.5s infinite alternate ease-in-out;
+}
+@media (max-width: 700px) {
+    a#btnSubir.aparece {
+        font-size: 35px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+main section#top {
+    margin: 80px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: var(--cor4);
+    padding: 10px;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1000px;
+}
+main section#top div.texto {
+    width: 45%;
+}
+
+main section#top div.texto h1 {
+    color: #fff;
+    font-size: 65px;
+    font-family: var(--font1);
+
+}
+
+main section#top div.texto p {
+    color: #fff;
+    font-size: 22px;
+
+}
+
+main section#top div.texto div.botoes {
+    display: flex;
+    margin: 30px 0 10px 0;
+    gap: 10px;
+}
+
+main section#top div.texto div.botoes a {
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: var(--font1);
+
+}
+
+main section#top div.texto div.botoes a.bt1 {
+    background-color: #fff;
+    color: var(--cor1);
+}
+
+main section#top div.imagem {
+    background-color: #ddd;
+    height: 60%;
+    width: 45%;
+}
+
+main section#top div.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+main section#top div.filtros {
+    background-color: #fff;
+    width: 95%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+main section#top div.filtros div.listaSelect {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+}
+
+main section#top div.filtros div.listaSelect div.filtro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+main section#top div.filtros div.listaSelect div.filtro label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main section#top div.filtros div.listaSelect div.filtro select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 420;
+    font-size: 18px;
+    background-color: #fff;
+    outline-color: var(--cor1);
+}
+
+main section#top div.filtros div.botoes {
+    width: 20%;
+}
+
+main section#top div.filtros div.botoes button {
+    background-color: var(--cor1);
+    color: #fff;
+    padding: 15px 60px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font1);
+}
+
+@media (max-width: 800px) {
+    main section#top div.texto {
+        width: 45%;
+    }
+    
+    main section#top div.texto h1 {
+        font-size: 45px;
+    }
+    
+    main section#top div.texto p {
+        font-size: 20px;
+    }
+    
+    main section#top div.texto div.botoes {
+        margin: 20px 0 8px 0;
+    }
+    
+    main section#top div.texto div.botoes a {
+        font-size: 18px;
+    }
+    
+    main section#top div.imagem {
+        height: 40%;
+        width: 45%;
+    }
+    
+    main section#top div.filtros {
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main section#top div.filtros div.listaSelect {
+        align-items: flex-end;
+        gap: 10px;
+        width: 80%;
+    }
+    
+    main section#top div.filtros div.listaSelect div.filtro {
+        gap: 10px;
+        width: 27%;
+    }
+    
+    main section#top div.filtros div.listaSelect div.filtro label {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    main section#top div.filtros div.listaSelect div.filtro select {
+        padding: 6px 10px;
+        font-weight: 420;
+        font-size: 18px;
+    }
+    
+    main section#top div.filtros div.botoes {
+        width: 20%;
+    }
+    
+    main section#top div.filtros div.botoes button {
+        padding: 8px 40px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 600px) {
+    main section#top div.texto {
+        width: 100%;
+    }
+    
+    main section#top div.texto h1 {
+        font-size: 40px;
+    }
+    
+    main section#top div.texto p {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    
+    main section#top div.texto div.botoes {
+        margin: 20px 0 0 0;
+    }
+    
+    main section#top div.texto div.botoes a {
+        font-size: 18px;
+    }
+    
+    main section#top div.imagem {
+        height: 90%;
+        width: 95%;
+        display: none;
+    }
+    
+    main section#top div.filtros {
+        border-radius: 10px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    main section#top div.filtros div.listaSelect {
+        align-items: flex-end;
+        gap: 10px;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    
+    main section#top div.filtros div.listaSelect div.filtro {
+        gap: 10px;
+        width: 90%;
+    }
+    
+    main section#top div.filtros div.listaSelect div.filtro label {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+    main section#top div.filtros div.listaSelect div.filtro select {
+        padding: 6px 10px;
+        font-weight: 420;
+        font-size: 16px;
+    }
+    
+    main section#top div.filtros div.botoes {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    main section#top div.filtros div.botoes button {
+        padding: 8px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        width: 100%;
+    }
+}
