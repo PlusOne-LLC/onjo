@@ -397,6 +397,19 @@ main section#terrenosEmDestaque div.listaCard div.card div.botoes a {
     border-radius: 8px;
 }
 
+@media (max-width: 700px) {
+    main section#terrenosEmDestaque div.top div h1 {
+        font-size: 30px;
+    }
+    
+    main section#terrenosEmDestaque div.top div p {
+        font-size: 15px;
+    }
+    main section#terrenosEmDestaque div.top a {
+        font-size: 18px;
+    }
+}
+
 main section#comoFunciona {
     padding: 5% 4%;
     text-align: center;

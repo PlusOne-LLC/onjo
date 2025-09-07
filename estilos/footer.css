@@ -26,7 +26,7 @@ footer section h2 {
 footer section p,
 footer section a {
 	font-size: 17px;
-	margin: 2px 0;
+	margin: 5px 0;
 	display: block;
 	text-decoration: none;
 	color: #fff;
@@ -44,7 +44,9 @@ footer section#copy {
 	margin: 10px 0 0 0;
 	padding: 20px 10px;
 }
-
+footer section#copy a {
+	text-wrap: wrap;
+}
 
 @media (max-width: 800px) {
 	footer {
