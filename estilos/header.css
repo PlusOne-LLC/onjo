@@ -28,8 +28,8 @@ header nav div#logo {
 }
 
 header nav div#logo a img {
-    height: 180px;
-    width: 180px;
+    height: 55px;
+    width: 55px;
 }
 
 header nav a#btnLogin {
@@ -100,6 +100,7 @@ header nav button.ativar span.linha:nth-child(3){
 }
 header.rolou {
     height: 80px;
+    box-shadow: 0 0 20px #ccc;
 }
 @media (max-width: 800px) {
     header{
